@@ -27,27 +27,22 @@ header {
   width: 90px;
 }
 
+.subtitle {
+  font-size: 18px;
+}
+
 .content {
   background: white;
   margin: 25px auto;
   padding: 25px;
   width: 85%;
-  max-width: 700px;
+  max-width: 720px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 body.dark .content {
   background: #2a2a2a;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 8px 0;
 }
 
 .button-area {
