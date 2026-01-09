@@ -1,100 +1,80 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background: linear-gradient(135deg, #020617, #020024);
-  color: #f8fafc;
+  margin: 0;
+  font-family: "맑은 고딕", Arial, sans-serif;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* 라이트 모드 */
+body.light {
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* 다크 모드 */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+header {
+  background-color: #003b7a;
+  color: white;
+  padding: 30px;
 }
 
 .logo {
-  width: 140px;
-  margin-bottom: 30px;
+  width: 90px;
 }
 
-.hero h1 {
-  font-size: 3.4rem;
-  background: linear-gradient(90deg, #38bdf8, #22c55e);
-  -webkit-background-clip: text;
-  color: transparent;
+.content {
+  background: white;
+  margin: 25px auto;
+  padding: 25px;
+  width: 85%;
+  max-width: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.subtitle {
-  margin-top: 20px;
-  font-size: 1.4rem;
-  color: #e5e7eb;
+body.dark .content {
+  background: #2a2a2a;
 }
 
-/* SECTION */
-section {
-  max-width: 1000px;
-  margin: 90px auto;
-  padding: 40px;
-  background: rgba(255,255,255,0.08);
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.button-area {
+  margin: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 16px;
   border-radius: 25px;
-}
-
-section h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #38bdf8;
-}
-
-section p, li {
-  font-size: 1.15rem;
-  line-height: 1.9;
-}
-
-/* IMAGE SECTION */
-.image-section {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.image-section img {
-  width: 45%;
-  border-radius: 20px;
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
-/* CODING */
-.coding button {
-  margin-top: 20px;
-  padding: 14px 28px;
   border: none;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #22c55e, #38bdf8);
-  font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
+  background-color: #003b7a;
+  color: white;
 }
 
-#message {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #22c55e;
+button:hover {
+  background-color: #0055aa;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 50px;
-  color: #9ca3af;
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#recordSection {
+  display: none;
 }
